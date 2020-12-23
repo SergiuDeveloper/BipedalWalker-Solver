@@ -12,7 +12,7 @@ action_space = env.action_space.shape[0]
 max_action = float(env.action_space.high[0])
 
 policy = Agent(state_space, action_space, max_action, policy_noise=0)  # Set noise to 0(no exploring needed)
-policy.load('final')
+policy.load('20')
 
 env.reset()
 
